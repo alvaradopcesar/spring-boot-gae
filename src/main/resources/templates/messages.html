@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="refresh" content="3"/>
+    <meta charset="UTF-8"/>
+    <title>demo-jar</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <ID></ID>
+        <th>TIME</th>
+        <th>MESSAGE</th>
+    </tr>
+    <tr th:each="message : ${messages}">
+        <td></td>
+        <td th:text="${message.id}"></td>
+        <td th:text="${message.time}"></td>
+        <td th:text="${message.payload}"></td>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
