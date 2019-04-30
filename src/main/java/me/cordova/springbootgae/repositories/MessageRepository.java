@@ -1,6 +1,6 @@
-package com.example.demojar.repositories;
+package me.cordova.springbootgae.repositories;
 
-import com.example.demojar.model.Message;
+import me.cordova.springbootgae.model.Message;
 import org.springframework.data.repository.CrudRepository;
 
 public interface MessageRepository extends CrudRepository<Message, Long> {

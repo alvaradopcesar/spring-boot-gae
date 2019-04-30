@@ -1,6 +1,6 @@
-package com.example.demojar.controller;
+package me.cordova.springbootgae.controller;
 
-import com.example.demojar.repositories.MessageRepository;
+import me.cordova.springbootgae.repositories.MessageRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +12,13 @@ public class MessageController {
 
     public MessageController(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
+    }
+
+    @RequestMapping("/")
+    public String HelloWorld (Model model){
+        model.addAttribute("message", "Hello from Thymeleaf!");
+
+        return "index";
     }
 
     @RequestMapping("/messages")

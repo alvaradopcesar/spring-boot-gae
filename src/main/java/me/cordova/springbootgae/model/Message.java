@@ -1,4 +1,4 @@
-package com.example.demojar.model;
+package me.cordova.springbootgae.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

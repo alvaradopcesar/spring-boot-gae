@@ -1,7 +1,7 @@
-package com.example.demojar.bootstrap;
+package me.cordova.springbootgae.bootstrap;
 
-import com.example.demojar.model.Message;
-import com.example.demojar.repositories.MessageRepository;
+import me.cordova.springbootgae.model.Message;
+import me.cordova.springbootgae.repositories.MessageRepository;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -24,7 +24,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
     private void initData() {
 
-        for (int i=0; i<10; i++){
+        for (int i=1; i<11; i++){
             Message message = new Message();
             message.setTime(LocalDateTime.now());
             message.setPayload(String.format("Test message # %d", i));
